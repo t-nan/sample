@@ -5,6 +5,18 @@ $gray-medium-light: #eaeaea;
 
 										/* общие */
 
+
+@mixin box_sizing {
+	-moz-box-sizing:
+	border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing:
+	border-box;
+}
+
+
+
+
 body {
 padding-top: 60px;
 }
@@ -97,4 +109,17 @@ footer {
 		margin-left: 15px;
 	}
 	}
+}
+
+
+
+										/* разное */
+
+										
+.debug_dump {
+	clear: both;
+	float: left;
+	width: 100%;
+	margin-top: 45px;
+	@include box_sizing;
 }
